@@ -5,6 +5,7 @@ const forecast = require('./utils/forecast')
 const geoCode = require('./utils/geocode')
 
 const app = express();
+const port = process.env.PORT || 3000 //get the port from heroku when running, 3000 if locally
 
 const publicDirPath = path.join(__dirname, '../public');
 const viewsDirPath = path.join(__dirname, '../templates/views');
