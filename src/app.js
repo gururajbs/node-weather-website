@@ -96,6 +96,6 @@ app.get('*', (req, res) => {
 //     res.send('<h1>Weather Data</h1>');
 // });
 
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
+app.listen(port, () => {
+    console.log('Server running on port ' + port);
 })
